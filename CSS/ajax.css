@@ -1,0 +1,157 @@
+* {
+  margin: auto;
+
+  padding: 0;
+}
+
+div {
+  text-align: center;
+  width: 80%;
+  height: 100%;
+  background-color: rgba(251, 248, 248, 0.844);
+
+}
+
+
+
+p {
+  padding: 10px;
+}
+
+ul li {
+
+  list-style-type: none;
+
+}
+
+ul {
+  position: relative;
+  width: 90%;
+  height: 200px;
+  margin:auto;
+  background-color: rgba(212, 208, 208, 0.754);
+  padding: 10px;
+border: 10px solid rgb(255, 255, 255);
+
+}
+
+li:nth-child(1) {
+  font-size: 45px;
+  padding-top: 10px;
+  padding-left: 200px;
+}
+
+li:nth-child(2) {
+  /* float: left; */
+  padding: 3px;
+  padding-top: 20px;
+  padding-left: 200px;
+  margin: 2px
+}
+
+li:nth-child(3) {
+  /* float: left; */
+  padding: 3px;
+  margin: 2px
+}
+
+li:nth-child(4) {
+  /* float: left; */
+  padding: 3px;
+  margin: 2px
+}
+
+li:nth-child(5) {
+ 
+  padding: 3px;
+  margin: 2px;
+  /* padding-top: 30px; */
+} 
+li:nth-child(6) {
+  display: flex;
+ position: relative;
+ left: 70%;
+  padding: 3px;
+  margin: 2px;
+  /* padding-top: 30px; */
+} 
+ul.banner {
+  justify-content:center;
+  margin:0 auto;
+  padding:10px;
+  position: fixed;
+  display:flex;
+flex-direction:column;
+  z-index: 1;
+  width: 80%;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+}
+.wel{
+font-size:15px
+
+}
+#btn-start {
+  font-size: 40px;
+  display:flex;
+  padding: 10px;
+  background-color: #fbfbfb9e;
+  position: relative;
+}
+
+
+img {
+  /* max-width: 100%;
+  height: auto; */
+  display:flex;
+  position: relative;
+  border: 10px solid rgb(255, 254, 254);
+    border-radius: 4px;
+    /* padding: 5px; */
+  margin-left: 1px;
+ 
+
+  
+  bottom:215px;
+  width: 220px;
+  height: 180px;
+}
+
+.pagination {
+  position: relative;
+  /* display: inline-block; */
+display:flex;
+flex-direction: row;
+width: 33%;
+  height: 30px;
+
+
+  margin: auto;
+}
+
+ul.pagination span {
+  display: flex;
+}
+
+ul.pagination span a {
+  color: black;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+}
+
+ul.pagination lispan a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+.ucon{
+  position: relative;
+  display: table;
+}
+.ucon:nth-child(0){
+  margin-top: 500px;
+
+}

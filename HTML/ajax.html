@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Ajax</title>
+
+</head>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="/CSS/ajax.css"
+>
+<!-- <script
+  type="text/javascript"
+  src="/JS/ajax.js"
+></script> -->
+<script
+  type="text/javascript"
+  charset="utf-8"
+  src="/JS/jquery.js"
+  <!--
+  相对路径不可以少了前面的两个点
+  --
+>
+</script>
+<script
+  type="text/javascript"
+  src="/JS/ajax.js"
+></script>
+
+<body>
+  <div>
+    <ul class="banner"> <button
+        type="button"
+        id="btn-start"
+      >大美太工欢迎你！ </button>
+      </br>
+      <span class="wel">欢迎访问文章列表</span> </br>
+      <span class="wel">welcome to access articles list</span>
+
+
+      <ul class="pagination">
+        <span><a href="#">«</a></span>
+        <span><a href="#">1</a></span>
+        <span><a
+            class="active"
+            href="#"
+          >2</a></li>
+          <span><a href="#">3</a></span>
+          <span><a href="#">4</a></span>
+          <span><a href="#">5</a></span>
+          <span><a href="#">6</a></span>
+          <span><a href="#">7</a></span>
+          <span><a href="#">»</a></span>
+      </ul>
+    </ul>
+
+  </div>
+
+</body>
+<!-- <script>
+  $.ajax({
+    type: "get",
+    url: "https://h5.sosho.cn/server/api/community/articles?com_id=545&category_id=1&per_page=15&page=1",
+    restype: "JSON", //预期设定返回类型
+    success: function (res) {
+      //res形参名，代表的是返回的数据
+      console.log("请求成功！")
+      // console.log(res) //怎么jQuery可以直接变成数组
+      //DOM操作
+      // console.log(res.items)
+      var data = res.data.items
+      var li = [],
+        ul = []
+      // con=[]
+      $("#btn-start").click(function () {
+        var data = res.data.items
+        var li = [],
+          ul = []
+        // = $("<ul></ul>")
+        //存储img地址
+
+        var im = []
+        for (l = 0; l < data.length; l++) {
+          im[l] = data[l].img_path
+          console.log("img地址" + im[l])
+
+        }
+        for (var i = 0; i < data.length; i++) {
+          var k = 0;
+
+          ul[k] = $("<ul></ul>")
+          li[0] = "<li>" + data[i].title + "</li>"
+          li[1] = "<li>" + data[i].intro + "</li>"
+          li[2] = "<li>" + "点赞数： " + data[i].hits_num + "</li>"
+          li[3] = "<li>" + "评论数： " + data[i].comment_num + "</li>"
+          li[4] = "<li>" + "转发数： " + data[i].share_num + "</li>"
+          li[5] = "<li>" + "最后更新： " + data[i].update_at + "</li>"
+          li[6] = "<img src=''>" + "</img>"
+
+          // var con = data[i].img_path
+          // $('img').attr('src', data[i].img_path)
+
+          //把li加入到ul中
+          for (j = 0; j < li.length; j++) {
+
+            ul[k].append(li[j])
+            $('ul[k]').addClass('ucont')
+            // console.log($('img').attr('src'));
+
+          }
+
+          $("div").append(ul[k])
+          console.log(ul[k])
+          console.log($('.con'))
+          console.log($('.ucon'))
+          k++
+          //下面的这种直接获取没有加ul
+          // for (m = 0; m < li.length; m++) {
+          //   $("body").append(li[m])
+          // }
+          //给img加src地址
+
+        }
+        for (m = 0; m < 15; m++) {
+          $('ul img').eq(m).attr('src', im[m])
+          console.log($('img').eq(m).attr('src'))
+        }
+        // console.log($('img').attr('src'));
+        // console.log($('image').attr('src'));
+        // $('image').src = $('image').text();
+        // console.log($('image').attr('src'))
+        // $('image').text()
+
+
+
+
+      })
+    }
+  })
+
+
+
+
+
+</script> -->
+
+</html>
