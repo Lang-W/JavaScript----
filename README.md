@@ -1,4 +1,4 @@
-# JavaScript----
+# JavaScript，jQuery的Ajax请求----
   - 确实初学jQuery，有点着急，只是完成了jQuery的Ajax请求，并且动态生成黑体html页面。
   - 这对于初学者来说无疑是巨大的挑战。而已在没有基础的情况下看老师给定API那个太吓人了
   - 错误难点在于：  
